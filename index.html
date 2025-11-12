@@ -3,22 +3,129 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCDS — Índice Canónico de DOIs</title>
     
     <script type="application/ld+json" src="tcds_indice_doi.jsonld"></script>
-
+    
+    <title>TCDS — Índice Canónico de DOIs</title>
+    
     <style>
-        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 980px; margin: 20px auto; padding: 0 15px; background: #f9f9f9; color: #222; }
-        header { border-bottom: 2px solid #ddd; padding-bottom: 15px; }
-        h1 { margin: 0; color: #000; }
-        .meta { color: #555; font-size: 0.9em; }
-        #listado { margin-top: 20px; }
-        .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .card-title { font-size: 1.1em; font-weight: 600; margin: 0 0 8px 0; }
-        .card-doi { font-family: monospace; background: #eee; padding: 2px 5px; border-radius: 4px; }
-        .card-link { display: inline-block; background: #333; color: #fff; padding: 6px 10px; border-radius: 5px; text-decoration: none; font-weight: 500; margin-top: 10px; font-size: 0.9em; }
-        .card-link:hover { background: #000; }
-        footer { margin-top: 30px; text-align: center; font-size: 0.85em; color: #777; }
+        /* --- Tema Oscuro y Fondo Galáctico --- */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0 15px 40px 15px;
+            color: #e0e0e0;
+            background-color: #0a0a1a; /* Azul muy oscuro/negro */
+            /* Fondo galáctico */
+            background-image: radial-gradient(circle at 20% 30%, rgba(58, 134, 255, 0.2) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(130, 80, 220, 0.15) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+        main { max-width: 980px; margin: 20px auto; }
+
+        /* --- Encabezado y Datos del Autor --- */
+        header {
+            border-bottom: 2px solid #3a86ff;
+            /* Línea afilada brillante */
+            box-shadow: 0 4px 15px -5px rgba(58, 134, 255, 0.7);
+            padding: 20px 0 15px 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 { margin: 0; color: #ffffff; }
+        .meta-autor { color: #aaa; font-size: 0.9em; }
+        .meta-autor a { color: #3a86ff; text-decoration: none; }
+        .meta-autor a:hover { text-decoration: underline; }
+
+        /* --- Tarjeta de Publicación (El "Contorno LED") --- */
+        .card {
+            background: rgba(15, 20, 40, 0.7); /* Fondo de tarjeta oscuro */
+            backdrop-filter: blur(5px);
+            border: 1px solid #3a86ff; /* Borde de neón */
+            border-radius: 8px; /* Filoso */
+            padding: 20px;
+            margin-bottom: 25px;
+            /* Contorno LED 3D */
+            box-shadow: 0 0 10px rgba(58, 134, 255, 0.4), 
+                        0 0 20px rgba(58, 134, 255, 0.3),
+                        inset 0 0 5px rgba(58, 134, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 
+                        0 0 30px rgba(255, 255, 255, 0.4);
+        }
+
+        /* --- Contenido de la Tarjeta --- */
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+        .card-meta {
+            font-size: 0.9em;
+            color: #bbb;
+            margin-bottom: 12px;
+        }
+        .card-doi {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        /* Resumen del DOI */
+        .card-summary {
+            font-size: 0.95em;
+            color: #ccc;
+            border-left: 3px solid #3a86ff;
+            padding-left: 10px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        /* --- Botón Filoso --- */
+        .card-link {
+            display: inline-block;
+            background: #3a86ff;
+            color: #ffffff;
+            padding: 8px 14px;
+            border: 1px solid #3a86ff;
+            border-radius: 4px; /* Filoso */
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.2s ease;
+        }
+        .card-link:hover {
+            background: #ffffff;
+            color: #0a0a1a;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        /* --- Línea Afilada Brillante --- */
+        .sharp-divider {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(58, 134, 255, 0.7), transparent);
+            margin: 25px 0 0 0;
+        }
+        
+        /* --- Mensajes de Carga/Error (Fricción Φ) --- */
+        #status {
+            text-align: center;
+            font-size: 1.1em;
+            color: #ffc107;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #777;
+        }
     </style>
 </head>
 
@@ -26,63 +133,131 @@
 
     <header>
         <h1>Índice Canónico TCDS</h1>
-        <p class="meta">El "Faro" (Beacon) y "Libro Mayor" del paradigma de la Teoría Cromodinámica Sincrónica (TCDS).<br>
-        <strong>Autor:</strong> Genaro Carrasco Ozuna (ORCID: 0009-0005-6358-9910)
+        <p class="meta-autor">
+            <strong>Autor:</strong> Genaro Carrasco Ozuna<br>
+            <strong>ORCID:</strong> <a href="https://orcid.org/0009-0005-6358-9910" target="_blank" rel="noopener noreferrer">0009-0005-6358-9910</a>
         </p>
     </header>
 
     <main id="listado">
-        <p>Cargando manifiesto de publicaciones TCDS...</p>
+        <div id="status">Inyectando Empuje (Q)... Cargando manifiesto de publicaciones TCDS...</div>
     </main>
 
     <footer>
-        <p>Este índice se genera automáticamente desde el manifiesto `tcds_indice_doi.jsonld`.<br>
-        Es un activo $Q$-driven del Proyecto TCDS.</p>
+        <p>Este índice es un activo $Q$-driven del Proyecto TCDS. <br>
+           Se construye dinámicamente desde el "Libro Mayor" (`works (10).bib`) y el "Blindaje" (`tcds_indice_doi.jsonld`).</p>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const listadoDiv = document.getElementById('listado');
-            
-            // Carga el manifiesto (el "Sustrato Σ")
-            fetch('tcds_indice_doi.jsonld')
-                .then(response => response.json())
-                .then(data => {
-                    listadoDiv.innerHTML = ''; // Limpiar el mensaje "Cargando..."
-                    
-                    // Verifica que el catálogo y el dataset existan
-                    if (data && data.dataset && data.dataset.length > 0) {
-                        
-                        // Itera sobre cada publicación en el manifiesto
-                        data.dataset.forEach(item => {
-                            // Crea la "tarjeta" HTML para el humano
-                            const card = document.createElement('div');
-                            card.className = 'card';
-                            
-                            let html = `<h3 class="card-title">${item.name}</h3>`;
-                            
-                            if (item['@id']) {
-                                const doi = item['@id'].replace('https://doi.org/', '');
-                                html += `<div class="meta"><strong>DOI:</strong> <span class="card-doi">${doi}</span></div>`;
-                            }
-                            if (item.author && item.author.name) {
-                                html += `<div class="meta"><strong>Autor:</strong> ${item.author.name}</div>`;
-                            }
-                            
-                            html += `<a href="${item['@id']}" class="card-link" target="_blank" rel="noopener noreferrer">Ver en Zenodo</a>`;
-                            
-                            card.innerHTML = html;
-                            listadoDiv.appendChild(card);
-                        });
+            const statusDiv = document.getElementById('status');
 
-                    } else {
-                        listadoDiv.innerHTML = '<p>Error: El manifiesto de metadatos está vacío o corrupto.</p>';
+            // --- El "Motor" (Parser Q-driven) ---
+            // Este motor es más robusto que un regex simple.
+            // Parsea el formato BibTeX (key = {value})
+            function parseBibEntry(entryText) {
+                const entry = {};
+                const lines = entryText.split('\n');
+                // Regex para encontrar el ID, ej: @misc{ID_DEL_DOI,
+                const idMatch = entryText.match(/@\w+\{([^,]+),/);
+                if (idMatch) {
+                    entry.id = idMatch[1].trim();
+                }
+
+                lines.forEach(line => {
+                    const parts = line.split('=');
+                    if (parts.length >= 2) {
+                        const key = parts[0].trim().toLowerCase();
+                        // Une el resto, quita llaves {}, comas y espacios
+                        const value = parts.slice(1).join('=')
+                                           .replace(/[\{\},"]/g, '')
+                                           .trim();
+                        entry[key] = value;
                     }
-                })
-                .catch(error => {
-                    console.error('Fricción Paradigmática (Error): No se pudo cargar el JSON-LD.', error);
-                    listadoDiv.innerHTML = '<p><strong>Error de Carga ($\phi$):</strong> No se pudo cargar el manifiesto. Verifique la consola.</p>';
                 });
+                return entry;
+            }
+
+            // --- El "Puente Isomórfico" (Conexión de Datos) ---
+            async function buildIndex() {
+                try {
+                    // 1. Cargar el "Sustrato Σ" (El .bib)
+                    const response = await fetch('works (10).bib');
+                    if (!response.ok) throw new Error(`Fricción (Φ) de Red: No se encontró works (10).bib`);
+                    
+                    const bibText = await response.text();
+                    
+                    // Separa el archivo .bib en entradas individuales
+                    const entries = bibText.split('@').slice(1); // Omite el primer split vacío
+                    
+                    if (entries.length === 0) {
+                        throw new Error('Fricción (Φ) de Datos: El archivo .bib está vacío o corrupto.');
+                    }
+
+                    // 2. Limpiar el estado de "Carga"
+                    listadoDiv.innerHTML = '';
+                    
+                    // 3. Renderizar (Inyectar Q)
+                    entries.forEach(entryText => {
+                        const entry = parseBibEntry(entryText);
+                        
+                        if (!entry.title || !entry.doi) {
+                            return; // Saltar entradas incompletas
+                        }
+
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        
+                        let html = '';
+                        
+                        // Título
+                        html += `<h3 class="card-title">${entry.title}</h3>`;
+                        
+                        // Metadatos (Autor y Año)
+                        html += `<div class="card-meta">`;
+                        if (entry.author) {
+                            html += `<strong>Autor:</strong> ${entry.author.replace(/ and /g, ', ')}`;
+                        }
+                        if (entry.year) {
+                            html += ` | <strong>Año:</strong> ${entry.year}`;
+                        }
+                        html += `</div>`;
+                        
+                        // DOI
+                        html += `<div class="card-meta"><strong>DOI:</strong> <span class="card-doi">${entry.doi}</span></div>`;
+
+                        // Resumen (Si existe en el .bib)
+                        if (entry.abstract) {
+                             html += `<p class="card-summary">${entry.abstract}</p>`;
+                        } else if (entry.keywords) {
+                            // Si no hay resumen, usamos las keywords
+                            html += `<p class="card-summary"><strong>Keywords:</strong> ${entry.keywords}</p>`;
+                        } else {
+                            html += `<p class="card-summary">(Resumen no disponible en el manifiesto .bib)</p>`;
+                        }
+
+                        // Botón Filoso
+                        const url = entry.url || `https://doi.org/${entry.doi}`;
+                        html += `<a href="${url}" class="card-link" target="_blank" rel="noopener noreferrer">Acceder al Recurso</a>`;
+
+                        // Línea Afilada (Solo si hay más de una entrada)
+                        if (entries.length > 1) {
+                            html += `<hr class="sharp-divider">`;
+                        }
+
+                        card.innerHTML = html;
+                        listadoDiv.appendChild(card);
+                    });
+
+                } catch (error) {
+                    console.error('Fallo en el Pivote Metrológico:', error);
+                    statusDiv.innerHTML = `<strong>Error de Fricción ($\phi$):</strong> ${error.message}. No se pudo construir el índice.`;
+                }
+            }
+
+            // Iniciar el "Motor" $Q$-driven
+            buildIndex();
         });
     </script>
 
