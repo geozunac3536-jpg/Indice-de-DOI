@@ -1,0 +1,580 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#"
+  },
+  "@type": "Collection",
+  "@id": "https://github.com/geozunac3536-jpg/Indice-de-DOI",
+  "name": "Índice de DOIs — Publicaciones Zenodo de Genaro Carrasco Ozuna",
+  "alternateName": [
+    "TCDS Índice DOI",
+    "Zenodo DOIs Collection"
+  ],
+  "description": "Colección indexable por crawlers con los identificadores DOI de Zenodo asociados a las publicaciones del proyecto TCDS (Teoría Cromodinámica Sincrónica).",
+  "dateModified": "2025-11-12",
+  "license": [
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://opensource.org/licenses/MIT",
+    "https://www.apache.org/licenses/LICENSE-2.0"
+  ],
+  "keywords": [
+    "TCDS",
+    "Teoría Cromodinámica Sincrónica",
+    "ΣFET",
+    "SYNCTRON",
+    "CSL-H",
+    "Σ-metrics",
+    "E-Veto",
+    "Q·Σ=φ",
+    "Coherencia",
+    "Sincronón σ",
+    "Reloj Causal",
+    "Segundo Coherencial",
+    "Isomorfismo",
+    "Isodinamismo"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "Genaro Carrasco Ozuna",
+    "identifier": "https://orcid.org/0009-0005-6358-9910"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Proyecto TCDS — Canon Paradigmático",
+    "identifier": "doi:10.5281/zenodo.17520491",
+    "url": "https://doi.org/10.5281/zenodo.17520491"
+  },
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17148573",
+      "identifier": "10.5281/zenodo.17148573",
+      "sameAs": "https://doi.org/10.5281/zenodo.17148573",
+      "url": "https://doi.org/10.5281/zenodo.17148573",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17148573"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17224905",
+      "identifier": "10.5281/zenodo.17224905",
+      "sameAs": "https://doi.org/10.5281/zenodo.17224905",
+      "url": "https://doi.org/10.5281/zenodo.17224905",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17224905"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17443586",
+      "identifier": "10.5281/zenodo.17443586",
+      "sameAs": "https://doi.org/10.5281/zenodo.17443586",
+      "url": "https://doi.org/10.5281/zenodo.17443586",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17443586"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17447331",
+      "identifier": "10.5281/zenodo.17447331",
+      "sameAs": "https://doi.org/10.5281/zenodo.17447331",
+      "url": "https://doi.org/10.5281/zenodo.17447331",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17447331"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17450317",
+      "identifier": "10.5281/zenodo.17450317",
+      "sameAs": "https://doi.org/10.5281/zenodo.17450317",
+      "url": "https://doi.org/10.5281/zenodo.17450317",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17450317"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17450327",
+      "identifier": "10.5281/zenodo.17450327",
+      "sameAs": "https://doi.org/10.5281/zenodo.17450327",
+      "url": "https://doi.org/10.5281/zenodo.17450327",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17450327"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17451373",
+      "identifier": "10.5281/zenodo.17451373",
+      "sameAs": "https://doi.org/10.5281/zenodo.17451373",
+      "url": "https://doi.org/10.5281/zenodo.17451373",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17451373"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17451385",
+      "identifier": "10.5281/zenodo.17451385",
+      "sameAs": "https://doi.org/10.5281/zenodo.17451385",
+      "url": "https://doi.org/10.5281/zenodo.17451385",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17451385"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17451453",
+      "identifier": "10.5281/zenodo.17451453",
+      "sameAs": "https://doi.org/10.5281/zenodo.17451453",
+      "url": "https://doi.org/10.5281/zenodo.17451453",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17451453"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17452020",
+      "identifier": "10.5281/zenodo.17452020",
+      "sameAs": "https://doi.org/10.5281/zenodo.17452020",
+      "url": "https://doi.org/10.5281/zenodo.17452020",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17452020"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17452046",
+      "identifier": "10.5281/zenodo.17452046",
+      "sameAs": "https://doi.org/10.5281/zenodo.17452046",
+      "url": "https://doi.org/10.5281/zenodo.17452046",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17452046"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17458693",
+      "identifier": "10.5281/zenodo.17458693",
+      "sameAs": "https://doi.org/10.5281/zenodo.17458693",
+      "url": "https://doi.org/10.5281/zenodo.17458693",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17458693"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17458809",
+      "identifier": "10.5281/zenodo.17458809",
+      "sameAs": "https://doi.org/10.5281/zenodo.17458809",
+      "url": "https://doi.org/10.5281/zenodo.17458809",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17458809"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17458955",
+      "identifier": "10.5281/zenodo.17458955",
+      "sameAs": "https://doi.org/10.5281/zenodo.17458955",
+      "url": "https://doi.org/10.5281/zenodo.17458955",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17458955"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17459148",
+      "identifier": "10.5281/zenodo.17459148",
+      "sameAs": "https://doi.org/10.5281/zenodo.17459148",
+      "url": "https://doi.org/10.5281/zenodo.17459148",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17459148"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17460101",
+      "identifier": "10.5281/zenodo.17460101",
+      "sameAs": "https://doi.org/10.5281/zenodo.17460101",
+      "url": "https://doi.org/10.5281/zenodo.17460101",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17460101"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17460891",
+      "identifier": "10.5281/zenodo.17460891",
+      "sameAs": "https://doi.org/10.5281/zenodo.17460891",
+      "url": "https://doi.org/10.5281/zenodo.17460891",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17460891"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17462568",
+      "identifier": "10.5281/zenodo.17462568",
+      "sameAs": "https://doi.org/10.5281/zenodo.17462568",
+      "url": "https://doi.org/10.5281/zenodo.17462568",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17462568"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17462595",
+      "identifier": "10.5281/zenodo.17462595",
+      "sameAs": "https://doi.org/10.5281/zenodo.17462595",
+      "url": "https://doi.org/10.5281/zenodo.17462595",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17462595"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17462750",
+      "identifier": "10.5281/zenodo.17462750",
+      "sameAs": "https://doi.org/10.5281/zenodo.17462750",
+      "url": "https://doi.org/10.5281/zenodo.17462750",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17462750"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17463045",
+      "identifier": "10.5281/zenodo.17463045",
+      "sameAs": "https://doi.org/10.5281/zenodo.17463045",
+      "url": "https://doi.org/10.5281/zenodo.17463045",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17463045"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17463490",
+      "identifier": "10.5281/zenodo.17463490",
+      "sameAs": "https://doi.org/10.5281/zenodo.17463490",
+      "url": "https://doi.org/10.5281/zenodo.17463490",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17463490"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17469327",
+      "identifier": "10.5281/zenodo.17469327",
+      "sameAs": "https://doi.org/10.5281/zenodo.17469327",
+      "url": "https://doi.org/10.5281/zenodo.17469327",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17469327"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17470632",
+      "identifier": "10.5281/zenodo.17470632",
+      "sameAs": "https://doi.org/10.5281/zenodo.17470632",
+      "url": "https://doi.org/10.5281/zenodo.17470632",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17470632"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17479578",
+      "identifier": "10.5281/zenodo.17479578",
+      "sameAs": "https://doi.org/10.5281/zenodo.17479578",
+      "url": "https://doi.org/10.5281/zenodo.17479578",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17479578"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17491112",
+      "identifier": "10.5281/zenodo.17491112",
+      "sameAs": "https://doi.org/10.5281/zenodo.17491112",
+      "url": "https://doi.org/10.5281/zenodo.17491112",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17491112"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17494318",
+      "identifier": "10.5281/zenodo.17494318",
+      "sameAs": "https://doi.org/10.5281/zenodo.17494318",
+      "url": "https://doi.org/10.5281/zenodo.17494318",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17494318"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17494368",
+      "identifier": "10.5281/zenodo.17494368",
+      "sameAs": "https://doi.org/10.5281/zenodo.17494368",
+      "url": "https://doi.org/10.5281/zenodo.17494368",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17494368"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17498171",
+      "identifier": "10.5281/zenodo.17498171",
+      "sameAs": "https://doi.org/10.5281/zenodo.17498171",
+      "url": "https://doi.org/10.5281/zenodo.17498171",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17498171"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17498200",
+      "identifier": "10.5281/zenodo.17498200",
+      "sameAs": "https://doi.org/10.5281/zenodo.17498200",
+      "url": "https://doi.org/10.5281/zenodo.17498200",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17498200"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17504243",
+      "identifier": "10.5281/zenodo.17504243",
+      "sameAs": "https://doi.org/10.5281/zenodo.17504243",
+      "url": "https://doi.org/10.5281/zenodo.17504243",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17504243"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17504507",
+      "identifier": "10.5281/zenodo.17504507",
+      "sameAs": "https://doi.org/10.5281/zenodo.17504507",
+      "url": "https://doi.org/10.5281/zenodo.17504507",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17504507"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17505340",
+      "identifier": "10.5281/zenodo.17505340",
+      "sameAs": "https://doi.org/10.5281/zenodo.17505340",
+      "url": "https://doi.org/10.5281/zenodo.17505340",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17505340"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17505875",
+      "identifier": "10.5281/zenodo.17505875",
+      "sameAs": "https://doi.org/10.5281/zenodo.17505875",
+      "url": "https://doi.org/10.5281/zenodo.17505875",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17505875"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17507622",
+      "identifier": "10.5281/zenodo.17507622",
+      "sameAs": "https://doi.org/10.5281/zenodo.17507622",
+      "url": "https://doi.org/10.5281/zenodo.17507622",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17507622"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17510316",
+      "identifier": "10.5281/zenodo.17510316",
+      "sameAs": "https://doi.org/10.5281/zenodo.17510316",
+      "url": "https://doi.org/10.5281/zenodo.17510316",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17510316"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17555261",
+      "identifier": "10.5281/zenodo.17555261",
+      "sameAs": "https://doi.org/10.5281/zenodo.17555261",
+      "url": "https://doi.org/10.5281/zenodo.17555261",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17555261"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17555759",
+      "identifier": "10.5281/zenodo.17555759",
+      "sameAs": "https://doi.org/10.5281/zenodo.17555759",
+      "url": "https://doi.org/10.5281/zenodo.17555759",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17555759"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17560070",
+      "identifier": "10.5281/zenodo.17560070",
+      "sameAs": "https://doi.org/10.5281/zenodo.17560070",
+      "url": "https://doi.org/10.5281/zenodo.17560070",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17560070"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17560150",
+      "identifier": "10.5281/zenodo.17560150",
+      "sameAs": "https://doi.org/10.5281/zenodo.17560150",
+      "url": "https://doi.org/10.5281/zenodo.17560150",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17560150"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17561711",
+      "identifier": "10.5281/zenodo.17561711",
+      "sameAs": "https://doi.org/10.5281/zenodo.17561711",
+      "url": "https://doi.org/10.5281/zenodo.17561711",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17561711"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17562117",
+      "identifier": "10.5281/zenodo.17562117",
+      "sameAs": "https://doi.org/10.5281/zenodo.17562117",
+      "url": "https://doi.org/10.5281/zenodo.17562117",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17562117"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17570393",
+      "identifier": "10.5281/zenodo.17570393",
+      "sameAs": "https://doi.org/10.5281/zenodo.17570393",
+      "url": "https://doi.org/10.5281/zenodo.17570393",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17570393"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17584200",
+      "identifier": "10.5281/zenodo.17584200",
+      "sameAs": "https://doi.org/10.5281/zenodo.17584200",
+      "url": "https://doi.org/10.5281/zenodo.17584200",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17584200"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17584450",
+      "identifier": "10.5281/zenodo.17584450",
+      "sameAs": "https://doi.org/10.5281/zenodo.17584450",
+      "url": "https://doi.org/10.5281/zenodo.17584450",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17584450"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17584492",
+      "identifier": "10.5281/zenodo.17584492",
+      "sameAs": "https://doi.org/10.5281/zenodo.17584492",
+      "url": "https://doi.org/10.5281/zenodo.17584492",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17584492"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17520491",
+      "identifier": "10.5281/zenodo.17520491",
+      "sameAs": "https://doi.org/10.5281/zenodo.17520491",
+      "url": "https://doi.org/10.5281/zenodo.17520491",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://zenodo.org/doi/10.5281/zenodo.17520491"
+      }
+    }
+  ],
+  "size": 47,
+  "mainEntityOfPage": "https://github.com/geozunac3536-jpg/Indice-de-DOI",
+  "about": {
+    "@type": "DefinedTerm",
+    "name": "Σ-metrics",
+    "description": "Conjunto de métricas de coherencia (LI, R, RMSE_SL, κΣ, ΔH) usadas para auditar señales TCDS."
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "SoftwareApplication",
+    "name": "Indice-de-DOI builder",
+    "version": "1.0.0",
+    "applicationCategory": "DataCataloging",
+    "url": "https://github.com/geozunac3536-jpg/Indice-de-DOI"
+  }
+}
