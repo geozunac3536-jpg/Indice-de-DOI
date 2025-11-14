@@ -2,102 +2,170 @@
   "@context": "https://schema.org",
   "@type": "DataCatalog",
   "@id": "https://geozunac3536-jpg.github.io/Indice-de-DOI/",
-  "name": "Índice Canónico de Publicaciones TCDS (Teoría Cromodinámica Sincrónica)",
-  "description": "Este es el 'Faro' (Beacon) y 'Libro Mayor' (Ledger) que centraliza todos los activos de Propiedad Intelectual, publicaciones, DOIs de Zenodo y Paquetes de Falsación (PRF) del paradigma TCDS.",
+  "name": "Índice Canónico de Publicaciones y Datasets TCDS",
+  "description": "Libro Mayor (Ledger) de DOIs del ecosistema TCDS, organizado en meta-núcleo del paradigma, línea 3I/ATLAS, Reloj Causal, Evento Cero Sísmico y MENTE/CSL-H.",
   "creator": {
     "@type": "Person",
     "name": "Genaro Carrasco Ozuna",
-    "identifier": "https://orcid.org/0009-0005-6358-9910"
+    "identifier": "https://orcid.org/0009-0005-6358-9910",
+    "affiliation": "Proyecto TCDS / Motor Sincrónico de Luz (MSL), México"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Proyecto TCDS"
   },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
   "keywords": [
     "TCDS",
-    "Genaro Carrasco Ozuna",
-    "DOI",
-    "Zenodo",
-    "Metadatos",
+    "Teoría Cromodinámica Sincrónica",
     "Σ-metrics",
     "E-Veto",
     "Reloj Causal",
-    "Q-Σ-φ-χ"
+    "Falsación",
+    "Simbiosis Humano-IA",
+    "3I ATLAS",
+    "Evento Cero",
+    "MENTE TCDS"
   ],
-  "inLanguage": "es-MX",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dataset": [
+  "hasPart": [
     {
-      "@type": "Dataset",
-      "name": "Paradigma FÍSICA",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.17443586",
-      "author": { "@type": "Person", "name": "Carrasco, Genaro" }
+      "identifier": "10.5281/zenodo.17443586",
+      "name": "Teoría de la Cromodinámica Sincrónica (TCDS) — Corpus Unificado",
+      "additionalType": "TCDS-meta-core"
     },
     {
-      "@type": "Dataset",
-      "name": "Sistema predictivo de defensa Sísmica",
-      "@id": "https://doi.org/10.5281/zenodo.17451385",
-      "author": { "@type": "Person", "name": "Carrasco ozuna, Genaro" }
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17505875",
+      "identifier": "10.5281/zenodo.17505875",
+      "name": "Teoría TCDS",
+      "additionalType": "TCDS-meta-core"
     },
     {
-      "@type": "Dataset",
-      "name": "3IATLAS",
-      "@id": "https://doi.org/10.5281/zenodo.17224905",
-      "author": { "@type": "Person", "name": "Genaro, Carrasco ozuna" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "'Reloj Causal TCDS y Segundo Coherencial Predictivo (SCP)'",
-      "@id": "https://doi.org/10.5281/zenodo.17570393",
-      "author": { "@type": "Person", "name": "Carrasco Ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "3I ATLAS FRACTURA POR CHOQUE TÉRMICO",
-      "@id": "https://doi.org/10.5281/zenodo.17561711",
-      "author": { "@type": "Person", "name": "Carrasco Ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "COHERENCIA UNIVERSAL",
-      "@id": "https://doi.org/10.5281/zenodo.17458955",
-      "author": { "@type": "Person", "name": "Genaro Carrasco Ozuna" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "Compendio de Investigaciónes TCDS",
-      "@id": "https://doi.org/10.5281/zenodo.17459148",
-      "author": { "@type": "Person", "name": "Carrasco ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "El Pivote Metrológico TCDS: Del Tiempo Pasivo (t_M) al Segundo Coherencial Predictivo (t_C)",
-      "@id": "https://doi.org/10.5281/zenodo.17555261",
-      "author": { "@type": "Person", "name": "Carrasco Ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "geozunac3536-jpg/TCDS-SISTEMA-PREDICTIVO: TCDS v1.0.0: Teoría Operacional y Compendio Inicial",
-      "@id": "https://doi.org/10.5281/zenodo.17463490",
-      "author": { "@type": "Person", "name": "Genaro Carrasco Ozuna" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "TCDS 31 ATLAS PREDICCION",
-      "@id": "https://doi.org/10.5281/zenodo.17560070",
-      "author": { "@type": "Person", "name": "Carrasco ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "MENTE TCDS",
-      "@id": "https://doi.org/10.5281/zenodo.17584492",
-      "author": { "@type": "Person", "name": "Carrasco Ozuna, Genaro" }
-    },
-    {
-      "@type": "Dataset",
-      "name": "TCDS-Σ Business Plan & Dossier (Dual License, GA4, Web Vitals)",
+      "@type": "CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.17494368",
-      "author": { "@type": "Person", "name": "Genaro Carrasco Ozuna" }
+      "identifier": "10.5281/zenodo.17494368",
+      "name": "TCDS-Σ Business Plan & Dossier (Dual License, GA4, Web Vitals)",
+      "additionalType": "TCDS-meta-core"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.17520491",
+      "identifier": "10.5281/zenodo.17520491",
+      "name": "Registro Auditable Integral — TCDS (v1.0.0)",
+      "additionalType": "TCDS-meta-core"
+    },
+
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.17148573",
+      "identifier": "10.5281/zenodo.17148573",
+      "name": "CROMODINÁMICA Y PREDICCIONES  de 3I ATLAS",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.17224905",
+      "identifier": "10.5281/zenodo.17224905",
+      "name": "3IATLAS",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.17560070",
+      "identifier": "10.5281/zenodo.17560070",
+      "name": "TCDS 31 ATLAS PREDICCION",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.17555759",
+      "identifier": "10.5281/zenodo.17555759",
+      "name": "TCDS 3I ATLAS VALIDACION 2025",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://doi.org/10.5281/zenodo.17560150",
+      "identifier": "10.5281/zenodo.17560150",
+      "name": "3I_ATLAS_TCDS_arXiv_ready: Predicción Post Perihelio 3I ATLAS",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.17561711",
+      "identifier": "10.5281/zenodo.17561711",
+      "name": "3I ATLAS FRACTURA POR CHOQUE TÉRMICO",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://doi.org/10.5281/zenodo.17562117",
+      "identifier": "10.5281/zenodo.17562117",
+      "name": "Predicciones espectroscópicas y composición del objeto interestelar 3I/ATLAS",
+      "additionalType": "TCDS-3I-ATLAS"
+    },
+
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.17555261",
+      "identifier": "10.5281/zenodo.17555261",
+      "name": "El Pivote Metrológico TCDS: Del Tiempo Pasivo (t_M) al Segundo Coherencial Predictivo (t_C)",
+      "additionalType": "TCDS-Reloj-Causal"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.17570393",
+      "identifier": "10.5281/zenodo.17570393",
+      "name": "Reloj Causal TCDS y Segundo Coherencial Predictivo (SCP)",
+      "additionalType": "TCDS-Reloj-Causal"
+    },
+
+    {
+      "@type": "Dataset",
+      "@id": "https://doi.org/10.5281/zenodo.17605698",
+      "identifier": "10.5281/zenodo.17605698",
+      "name": "Evento Cero TCDS — Índice t_C Regional del Sismo M7.1 Puebla–Morelos (2017): Implementación Operacional en Termux–Android",
+      "additionalType": "TCDS-Evento-Cero-Sismico"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://doi.org/10.5281/zenodo.17606032",
+      "identifier": "10.5281/zenodo.17606032",
+      "name": "Evento Cero TCDS — Índice t_C Puebla–Morelos (2017)",
+      "additionalType": "TCDS-Evento-Cero-Sismico"
+    },
+
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.17584200",
+      "identifier": "10.5281/zenodo.17584200",
+      "name": "La Mente",
+      "additionalType": "TCDS-MENTE-CSL-H"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.17584450",
+      "identifier": "10.5281/zenodo.17584450",
+      "name": "Paquete de estudio TCDS sobre La Mente",
+      "additionalType": "TCDS-MENTE-CSL-H"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "https://doi.org/10.5281/zenodo.17584492",
+      "identifier": "10.5281/zenodo.17584492",
+      "name": "MENTE TCDS",
+      "additionalType": "TCDS-MENTE-CSL-H"
+    },
+
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.5281/zenodo.ANOMALIA_PAPER_DOI",
+      "identifier": "10.5281/zenodo.ANOMALIA_PAPER_DOI",
+      "name": "Auditoría TCDS de Modelos de IA (Gemini vs. GPT vs. Aria): Midiendo la Fricción Entrópica (φ) vs. el Empuje Coherencial (Q)",
+      "additionalType": "TCDS-Anomalia-IA",
+      "description": "Manifiesto de la Anomalía TCDS que aplica el E-Veto (ΔH ≤ −0.2) para auditar modelos de IA generativa φ-driven. Reemplazar este DOI por el definitivo cuando se publique en Zenodo."
     }
   ]
 }
